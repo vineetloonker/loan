@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "loan-app-463017",
+  "private_key_id": "6cfa11c5fccd9f15b1dd2bbf700c05ad9b0d5864",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC3uqMkl0ZaelwZ\nw858uJSHfQmc59+MTHGmSOeyt6YCZ5EbmUrS/NiwFKGNNt6jgGMqUMfoP9/wsIlK\ne3y5+rSc8Kt0Z6yZ33ykRzpy2jRxWy6m+4EH/g6rFPHqaBLJSbVFsucfbOzYB0Vs\nSjf0N4RdTQBeL9GSBi/KstMWxWMwpbIzYucT6I18UlVIo0r4XxDnj/HlMeUyYNLD\nEnkAsPHCv4Z85LF8LmMpN6OhHonmzWdRNUIA8Zo2BTgqiB7tUlrghVI5EhOKohD8\njT21XL5U6N70UkgGB7AJulR6qESPhdhp9yUie0yMAYMBlYA3dUNBtKNQkgB44vEE\n4M2Elm4HAgMBAAECggEAVWzOYPuDJxtgSkx77AqIaMyu1QkMrDd42idor3RrGBAe\nbHYkT6Bngcs96CI8d0oBEZI4uJhGX6s9UmfDMNfL9XKDTZ7Mpki+s8U4fGFPY+tQ\n8CvdLSGnoU0eQ+562aNPSOZrRvXG05Th5v1FMeREQ3tDcgeKyfnda8IkmqBRQ7Ll\nMKi3XoC4GnTbN6DLWjZRKLtijPmM8klM54MTF5h0nAl/eSVcY+5c3jM37+phSJys\n9ENr3uJyOMCvPOjFFLjK9xOazxfEhbkoAyILxmHXgPf3ePZpnOdufNGmOIgFUTNe\nZRQ3YR7Wvcb9sssipSJTyYZRB6ZzfZfLf6AzMc5N6QKBgQDgqqMaNmitq6OwuH/Q\ntpvYeigd5sjBgFzaGxHvYx4cuEX+Y1CXgkMJYdZYcyBFQ5vcLMsL/e2mvHSc+Hov\nXz5V6tsxG/sliaKwrbGJz73by0udkvgANrEkDZyaFBDen3tgsqV5vJVlAVRf/vfc\nT0q44tkqKdtARAKMeXJtKU1SKQKBgQDRWmRElxiO+OU0HKMz3MX+cge18p9yMKVo\nsXqbg1cSc0JLBXRh0DEzY3rD5qJaIu5rvAnL7zpMU0SzXG40zX8VeTUMxb6woNoG\nuhEOT/E1y8QsxK+yITvG6eFFp6UQbWynGqE4wnL2nNaEfO+Q5HuBInJrN8xNmqj1\n0x4jHHGkrwKBgQCst6IiUbfR5AU4o+5nNyvClc7nhffKgvNfHbaBEfMhYy00L4fS\nomsE+Hk/kGo7tYlKEAmdU37zUyhXUNMmPhN/G8mdDITcS96N80psxw+PvM+J+WW9\nTE6MiAZfkZOSgoroQQ7j8u3rM8V481v7u92XG5aWSo1q754B/o/QihMOWQKBgQCh\ndLPljh3bjaq+0OMwyTBNdsXpla9QUqIOpumm69kIGqniz9cc5II9Xpg8Yy+MkmoL\n3l4z0FDGsmVGap93y5AaEHtQWWUiNTtQeslSn2aolXi7CglyOF0woAkjPhJ4I9vq\n2AfEjXo6JWTvkqbzuLJjOhzCAatnokJyK5qPe41NcwKBgDSLS5pjPJ0sy40Mz/mt\nEyYQNVF2OhoHhqbRHEfOrC/m65lfZuiwXkk07U5Zu9VblmKUnsvzGLfostNb7FL2\n9f94GRJYmsA1oZU3v534S8/m5auHvHMgf/yeUHDJllwYl/GM8ltirbwS6n8O2oW2\nDyqNDcIiQy3xK8YJka7xd4vS\n-----END PRIVATE KEY-----\n",
+  "client_email": "streamlit-writer@loan-app-463017.iam.gserviceaccount.com",
+  "client_id": "107652863020089759507",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/streamlit-writer%40loan-app-463017.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
