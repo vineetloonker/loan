@@ -9,6 +9,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("loan-app-463017-d64d1b
 client = gspread.authorize(creds)
 
 # Open the worksheet
+st.write("Using sheet_id:", st.secrets.get("sheet_id"))
 sheet = client.open_by_key(st.secrets["sheet_id"]).sheet1
 
 # Page setup
