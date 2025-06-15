@@ -1,10 +1,9 @@
 import streamlit as st
-import pandas as pd
-import os
 from datetime import datetime
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
 st.set_page_config(page_title="Customer Form", page_icon="📝")
-
 st.title("📝 Customer Entry Form")
 
 # Input fields
@@ -13,27 +12,22 @@ phone = st.text_input("Phone Number")
 address = st.text_area("Address")
 id_proof = st.text_input("ID Proof (Aadhar/PAN/etc.)")
 
-# Submit Button
+# Save button
 if st.button("Save Customer"):
-    if name and phone and id_proof:
-        # Prepare customer dictionary
-        customer = {
-            "Name": name,
-            "Phone": phone,
-            "Address": address,
-            "ID Proof": id_proof,
-            "Entry Time": datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-        }
+    if len(name.strip()) > 0 and len(phone.strip()) > 0 and len(id_proof.strip()) > 0:
+        try:
+            # Google Sheets setup
+            scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+            creds = ServiceAccountCredentials.from_json_keyfile_dict(st.secrets["gcp_service_account"], scope)
+            client = gspread.authorize(creds)
 
-        # Save to Excel (append or create new)
-        filename = "customers.xlsx"
-        if os.path.exists(filename):
-            df_existing = pd.read_excel(filename)
-            df_new = pd.concat([df_existing, pd.DataFrame([customer])], ignore_index=True)
-        else:
-            df_new = pd.DataFrame([customer])
+            sheet = client.open_by_key(st.secrets["sheet_id"]).worksheet("Sheet1")
+            new_row = [name, phone, address, id_proof, datetime.now().strftime("%d-%m-%Y %H:%M:%S")]
+            sheet.append_row(new_row)
 
-        df_new.to_excel(filename, index=False)
-        st.success("✅ Customer saved successfully!")
+            st.success("✅ Customer saved to Google Sheet!")
+
+        except Exception as e:
+            st.error(f"Error: {e}")
     else:
         st.warning("Please fill all required fields (Name, Phone, ID Proof)")
